@@ -1,0 +1,241 @@
+
+
+.sidebar {
+  background: #333333;
+  position: absolute;
+  height: 100%;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  padding: 40px 0 0 0;
+  transition: all 500ms;
+  z-index: 11;
+  &.sidebar-show {
+    left: 0;
+  }
+  .logo {
+    padding: 0 0 50px;
+    img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .scroll-area {
+    position: relative;
+    .scroll-up, .scroll-down {
+      position: absolute;
+      right: 8px;
+      display: none;
+    }
+    .scroll-up {
+      top: -35px;
+    }
+    .scroll-down {
+      bottom: -50px;
+    }
+    .cities {
+      padding: 0 30px;
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          clear: both;
+          font-weight: 400;
+          line-height: 100%;
+
+          a {
+            color: #fff;
+            display: inline-block;
+            font-size: 12px;
+            span {
+              display: block;
+              &.location {
+                float: left;
+              }
+              &.count {
+                float: right;
+                background: #4e4e4e;
+                padding: 1px 4px;
+                border-radius: 3px;
+              }
+            }
+          }
+          .province-link {
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            width: 100%;
+            padding: 0 0 30px;
+            font-weight: 400;
+            display: inline-block;
+            transition: all 500ms;
+            &:after {
+              position: absolute;
+              content: '';
+              display: block;
+              left: 0;
+              bottom: 15px;
+              height: 1px;
+              width: 100%;
+              background: #474747;
+            }
+            .region {
+              float: left;
+              text-align: left;
+              font-size: 13px;
+              width: 100%;
+              &:hover {
+                cursor: pointer;
+              }
+              i {
+                float: right;
+                transition: all 500ms;
+              }
+            }
+
+            .extend-cities {
+              float: right;
+              cursor: pointer;
+              i {
+                transition: all 500ms;
+              }
+            }
+            &.is-active {
+              .region i {
+                -ms-transform: rotate(180deg); /* IE 9 */
+                -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+                transform: rotate(180deg);
+              }
+              &:after {
+                background: $color1;
+                height: 2px;
+              }
+            }
+          }
+          ul {
+            display: none;
+            padding: 0 0 20px;
+            li {
+              a {
+                font-weight: 400;
+                padding: 2px 0;
+                width: 100%;
+                span {
+                  text-transform: none;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  p.mp-link {
+    color: #fff;
+    text-align: center;
+    padding: 50px 0 0;
+    a {
+      display: block;
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  .navage-sidebar {
+    padding: 0 0 65px;
+    position: relative;
+    &:after, &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      height: 1px;
+    }
+    &:before {
+      top: -10px;
+    }
+    &:after {
+      top: 35px;
+    }
+    ul {
+      margin: 0;
+      padding: 0 20px;
+      li {
+        display: inline-block;
+        a {
+          color: #fff;
+          font-weight: 300;
+          font-size: 15px;
+          position: relative;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1030px) {
+  .scrollbar {
+    position: absolute;
+    right: 10px;
+    width: 2px;
+    height: 360px;
+    background: #ccc;
+    line-height: 0;
+    .handle {
+      width: 100%;
+      height: 100px;
+      background: $color1;
+      cursor: pointer;
+      .mousearea {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 22px;
+        height: 100%;
+      }
+    }
+  }
+  .contains {
+    padding-left: 200px;
+  }
+  .sidebar {
+    left: 0;
+    position: fixed;
+    .scroll-area {
+      .scroll-up, .scroll-down {
+        display: block;
+      }
+    }
+    .cities {
+      height: 345px;
+      overflow: hidden;
+    }
+  }
+  .spa-container .single-spa {
+    .spa-details .spa-main {
+      /*min-height: 170px;
+      height: 170px;*/
+    }
+  }
+}
+@media screen and (min-width: 1450px) {
+  .contains {
+    max-width: none;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .spa-container .single-spa {
+    width: 22%;
+    
+  }
+}

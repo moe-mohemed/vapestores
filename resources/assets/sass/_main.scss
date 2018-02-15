@@ -1,0 +1,99 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+i {
+  color: $color1;
+}
+.contains {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  .pagination {
+    font-family: 'Montserrat', sans-serif;
+
+    li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
+}
+
+
+.page-title {
+  background: #fff;
+  padding: 15px 0;
+  h1 {
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+  }
+}
+
+body {
+  background: #F3F3F3;
+  //font-family: 'Roboto', sans-serif;
+  //font-family: 'Josefin Sans', sans-serif;
+  //font-family: 'Josefin Slab', serif;
+  font-family: $monserrat;
+  line-height: 24px;
+  font-weight: 300;
+  position: relative;
+}
+.navage, .sidebar {
+  //font-family: 'Roboto', sans-serif;
+
+}
+.city-map-area {
+ padding: 0 0 60px;
+}
+
+
+@media screen and (min-width: 600px) {
+  .page-title {
+    h1 {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .page-title {
+    h1 {
+      font-size: 26px;
+    }
+  }
+}

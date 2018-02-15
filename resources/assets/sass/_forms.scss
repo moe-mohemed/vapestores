@@ -1,0 +1,126 @@
+form {
+  i {
+    color: #fff;
+  }
+}
+.create-form, .contact-form {
+  padding: 20px 0 40px;
+  .form-group {
+    padding: 5px 0 ;
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    input {
+      display: block;
+      border-radius: 5px;
+      padding: 0 10px;
+      border: 1px solid gainsboro;
+      width: 300px;
+      height: 30px;
+      &[type='radio'] {
+        display: inline-block;
+        height: auto;
+        width: auto;
+      }
+
+    }
+    textarea {
+      display: block;
+      height: 100px;
+      width: 400px;
+      border-radius: 5px;
+      border: 1px solid gainsboro;
+    }
+    button {
+      background: $color1;
+      padding: 7px 15px;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 1px solid gainsboro;
+    }
+  }
+  .pricing {
+    p {
+      padding: 0 0 20px;
+    }
+    .input-field {
+      display: inline-block;
+      input[type=text] {
+        max-width: 80px;
+      }
+    }
+  }
+}
+.reg-form {
+  padding: 20px 0 40px;
+  .select-img {
+    padding: 20px 0;
+    display: inline-block;
+    margin-right: 10px;
+    img {
+      max-width: 70px;
+    }
+  }
+  .selected-img {
+    border: 5px solid $color1;
+    border-radius: 50%;
+  }
+  i {
+    color: #fff;
+  }
+}
+.login-pg {
+  padding: 35px 0 0;
+  .login-form {
+    display: block;
+    .forgot-pwd {
+      padding: 10px 0 0;
+    }
+  }
+}
+.main-img-form {
+  padding: 20px 0 40px;
+  .select-main-img {
+    padding: 20px 0;
+    display: inline-block;
+    margin-right: 10px;
+    img {
+      max-width: 70px;
+    }
+  }
+  .selected-main-img {
+    border: 5px solid $color1;
+  }
+  i {
+    color: #fff;
+  }
+}
+.contact-form {
+  padding: 35px 0 0;
+}
+
+// Remove Focus Boxes
+select:focus {
+  outline: $select-focus;
+}
+
+button:focus {
+  outline: none;
+  background-color: $button-background-focus;
+}
+
+label {
+  font-size: 14px;
+  color: $input-border-color;
+}
+
+@import 'forms/input-fields';
+@import 'forms/radio-buttons';
+@import 'forms/checkboxes';
+@import 'forms/switches';
+@import 'forms/select';
+@import 'forms/file-input';
+//@import 'forms/range';
+

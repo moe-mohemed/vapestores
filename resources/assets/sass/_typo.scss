@@ -1,0 +1,50 @@
+/*********************
+FONT FACE
+*********************/
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-Hairline.otf') format("opentype");;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-UltraLight.otf') format("opentype");;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-Light.otf') format("opentype");;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-Regular.otf') format("opentype");;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-SemiBold.otf') format("opentype");;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-Bold.otf') format("opentype");;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-ExtraBold.otf') format("opentype");;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url('../fonts/Montserrat-Black.otf') format("opentype");;
+  font-weight: 900;
+}
+
+//standard font stacks
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+//custom font stacks
+$monserrat:         'Montserrat', sans-serif;

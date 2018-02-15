@@ -1,0 +1,33 @@
+
+@import "vars";
+@import "normal";
+@import "typo";
+@import "main";
+@import "forms";
+@import "rating";
+@import "header";
+@import "spas";
+@import "layout";
+@import "inner";
+@import "contact";
+@import "buttons";
+@import "popover";
+@import "tabs";
+@import "lightbox";
+@import "rates-spas";
+
+body {
+}
+.form-control {
+  height: 40px;
+}
+img {
+  max-width: 100%;
+
+}
+.gallery-img {
+  margin-bottom: 1em ;
+}
+h2, h3, p {
+  margin: 0;
+}
