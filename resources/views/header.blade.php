@@ -64,7 +64,7 @@
                     <div class="user-welcome dropdown-button" data-activates="dropdown-user-content"><span>{{ $user->username }}</span><span class="caret"><i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
                     <div id="dropdown-user-content" class="user-drop dropdown-content prevent-def">
                         @if ($signedIn && $user->isAdmin())
-                            <a href="/store/create">Add Spa</a>
+                            <a href="/store/create">Add Store</a>
                             <a href="/adminviewusers">List Users</a>
                         @elseif($signedIn && $user->isStoreManager())
                             @foreach($user->managerOfSpa as $managed_store)
