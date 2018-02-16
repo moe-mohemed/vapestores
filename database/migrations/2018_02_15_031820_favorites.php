@@ -3,6 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
+
 class Favorites extends Migration
 {
     /**
@@ -20,7 +22,7 @@ class Favorites extends Migration
             $table->timestamps();
         });
     }
-    
+
 
     /**
      * Reverse the migrations.
