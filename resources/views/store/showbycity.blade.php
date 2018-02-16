@@ -1,14 +1,10 @@
 @extends('layout')
 
-@php
-    $storeCity = 'dsfdsfds';
-@endphp
-
 @section('title', 'Vape stores in '.$storeCity )
 @section('content')
     <div class="page-title">
         <div class="contains">
-            <h1>Erotic Massage Parlours in {{ $storeCity }}</h1>
+            <h1>Vape Stores in {{ $storeCity }}</h1>
         </div>
     </div>
     <div class="contains">

@@ -9,7 +9,7 @@
                 @foreach($ratings as $rate)
                     <div class="single-rated-spa">
 
-                        <div class="spa-link"><a href="/{{ $rate->spa->region_slug }}/{{ $rate->spa->city_slug }}/{{ $rate->spa->store_name_slug }}"><h3>{{ $rate->spa->store_name}}</h3></a></div>
+                        <div class="spa-link"><a href="/{{ $rate->store->region_slug }}/{{ $rate->store->city_slug }}/{{ $rate->store->store_name_slug }}"><h3>{{ $rate->store->store_name}}</h3></a></div>
                         <div class="rated-comment">
                             <span>Your Comment:</span>
                             <p>{{ $rate->comment }}</p>
@@ -26,7 +26,7 @@
                     </div>
                 @endforeach
             @else
-                <h4>Looks like you haven't rated any spas. Rate the spas you've been to and they will show up here.</h4>
+                <h4>Looks like you haven't rated any stores. Rate the stores you've been to and they will show up here.</h4>
             @endif
         </div>
 

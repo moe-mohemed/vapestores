@@ -41,7 +41,7 @@ class ActivationService
         $data['link'] = $link;
         $data['name'] = $user->name;
         $this->mailer->send('email.activate', array('data' => $data), function ($message) use ($user)  {
-            $message->from('info@spapal.ca', 'StorePal');
+            $message->from('rzarectah88@gmail.com', 'VapeStoreMaps');
 
             $message->to($user->email)->subject('Activation mail');
         });

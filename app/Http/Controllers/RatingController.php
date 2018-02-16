@@ -24,8 +24,8 @@ class RatingController extends Controller
         $store = Store::where('id', $request->store_id)->value('store_name');
         $mBody = "Somebody left a rating for $store \r\n Rating: $request->rating \r\n Comment: $request->comment";
         Mail::raw($mBody, function ($message) use ($store) {
-            $message->from('info@spapal.ca', 'StorePal');
-            $message->to('info@spapal.ca')->subject('New rating for '.$store);
+            $message->from('rzarectah88@gmail.com', 'VapeStoreMaps');
+            $message->to('rzarectah88@gmail.com')->subject('New rating for '.$store);
         });
 
         flash()->success('success', 'Thanks for your review');

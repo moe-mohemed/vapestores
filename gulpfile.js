@@ -30,7 +30,7 @@ elixir((mix) => {
         'lity.css'
     ], './public/css/libs.css')
     .browserSync({
-        proxy: 'spapal.ca'
+        proxy: 'www.vapestoremaps.com'
     });
 });
 

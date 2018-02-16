@@ -85,7 +85,7 @@
                         @endif
                     </div>
                     <div class="panel-footer">
-                        <favorite :spa={{ $stores->id }} :favorited={{ $stores->favorited() ? 'true' : 'false' }}></favorite>
+                        <favorite :store={{ $stores->id }} :favorited={{ $stores->favorited() ? 'true' : 'false' }}></favorite>
                     </div>
                 </div>
             </div>

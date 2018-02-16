@@ -1,7 +1,7 @@
 {{--
 @extends('layout')
 
-@section('title', 'Erotic Massage Parlours in ' )
+@section('title', 'Vape Stores in ' )
 @section('content')
     <div class="contains">
         @foreach($stores as $store)

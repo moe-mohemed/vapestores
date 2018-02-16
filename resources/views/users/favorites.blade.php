@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Favorite Spas')
+@section('title', 'Favorite Stores')
 
 @section('content')
     <div class="contains">
@@ -9,7 +9,7 @@
             @include('store.listings')
         @else
             <div class="spa-container">
-                <h4>Looks like you don't have any favorite spas, click on the heart icon of spas you like to add them to your favorites.</h4>
+                <h4>Looks like you don't have any favorite stores, click on the heart icon of stores you like to add them to your favorites.</h4>
             </div>
         @endif
     </div>

@@ -64,14 +64,14 @@
                     <div class="user-welcome dropdown-button" data-activates="dropdown-user-content"><span>{{ $user->username }}</span><span class="caret"><i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
                     <div id="dropdown-user-content" class="user-drop dropdown-content prevent-def">
                         @if ($signedIn && $user->isAdmin())
-                            <a href="/spa/create">Add Spa</a>
+                            <a href="/store/create">Add Spa</a>
                             <a href="/adminviewusers">List Users</a>
-                        @elseif($signedIn && $user->isSpaManager())
-                            @foreach($user->managerOfSpa as $managed_spa)
-                                <a href="/{{ $managed_spa->region_slug }}/{{ $managed_spa->city_slug }}/{{ $managed_spa->store_name_slug }}">Manage {{$managed_spa->store_name}}</a>
+                        @elseif($signedIn && $user->isStoreManager())
+                            @foreach($user->managerOfSpa as $managed_store)
+                                <a href="/{{ $managed_store->region_slug }}/{{ $managed_store->city_slug }}/{{ $managed_store->store_name_slug }}">Manage {{$managed_store->store_name}}</a>
                             @endforeach
                         @endif
-                        <a href="{{ url('favorite-spas') }}">Favorite Spas</a>
+                        <a href="{{ url('favorite-stores') }}">Favorite Stores</a>
                         <a href="{{ url('my-ratings') }}">My Ratings</a>
                         <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
                         <a href="{{ route('auth.edit',$user->id)}}">Edit Avatar</a>
@@ -97,6 +97,6 @@
 </div><!--/.nav-collapse -->
 <div class="rate-message">
     <div class="contains cf">
-        <h2>If you have been to any of the spas on our site, please sign up and leave a review, it's completely free. Thank You</h2>
+        <h2>If you have been to any of the stores on our site, please sign up and leave a review, it's completely free. Thank You</h2>
     </div>
 </div>

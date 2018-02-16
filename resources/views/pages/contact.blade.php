@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'SpaPal')
+@section('title', 'VapeStoreMaps')
 
 @section('content')
     <div class="contact-pg">

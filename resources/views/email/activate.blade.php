@@ -5,7 +5,7 @@
 </head>
 <body>
 <div>
-    SpaPal Registration:<br/>
+    VapeStoreMaps Registration:<br/>
     <h3>hi, {{ $data['name'] }}</h3>
     <p>Thank you for registering.<br/>
         We require that you "validate" your registration to ensure that

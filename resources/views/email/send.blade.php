@@ -5,7 +5,7 @@
 </head>
 <body>
 <div>
-    SpaPal Contact:<br/>
+    VapeStoreMaps Contact:<br/>
     <h3>Email: {{ $data['email'] }}</h3>
     <h3>Name: {{ $data['name'] }}</h3>
     <p>{{ $data['message'] }}</p>

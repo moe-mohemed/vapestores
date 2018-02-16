@@ -4419,7 +4419,7 @@ $('.prevent-def').on('click touchstart touchend touchmove tap dbltap dragstart d
     event.stopPropagation();
 });
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     if (sessionStorage.getItem('rateMessage') !== 'true') {
         setTimeout(function() {
             $('.rate-message').show('slow')
@@ -4427,7 +4427,7 @@ $(document).ready(function () {
         sessionStorage.setItem('rateMessage','true');
     }   
     
-});
+});*/
 
 $(document).ready(function(){
     $('ul.tabs').tabs();

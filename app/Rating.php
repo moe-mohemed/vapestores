@@ -15,7 +15,7 @@ class Rating extends Model
         'rating',
         'comment'
     ];
-    public function spaRating (Store $store)
+    public function storeRating (Store $store)
     {
         return $this->select('store_id')
             ->where('store_id', $store->id)
@@ -37,7 +37,7 @@ class Rating extends Model
         return $this->user_id == $user->id;
     }*/
 
-    public function spa()
+    public function store()
     {
         return $this->belongsTo(Store::class);
     }

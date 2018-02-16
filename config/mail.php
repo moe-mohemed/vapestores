@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'info@spapal.ca', 'name' => 'SpaPal'],
+    'from' => ['address' => 'info@spapal.ca', 'name' => 'VapeStoreMaps'],
 
     /*
     |--------------------------------------------------------------------------

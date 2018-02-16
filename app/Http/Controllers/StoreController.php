@@ -217,7 +217,7 @@ class StoreController extends Controller
     public function show($region_slug, $city_slug, $store_name){
         $rating = new Rating;
         $store = Store::where('store_name_slug', $store_name)->with('ratings')->firstOrFail();
-        $store_rating = ($rating->spaRating($store) * 100)/5;
+        $store_rating = ($rating->storeRating($store) * 100)/5;
         $rating_count = $rating->ratingCount($store) ;
 
         $rating_avg = $rating->where('store_id', $store->id)->avg('rating');
@@ -254,7 +254,7 @@ class StoreController extends Controller
         $locations = Store::select('store_name', 'lat', 'lng')->where('city_slug', $city)->get();
         $storeCity = Store::Select('city')->where('city_slug', '=', $city)->value('city');
 
-        return view('store.showbycity', compact('store', 'spaCity', 'locations'));
+        return view('store.showbycity', compact('store', 'storeCity', 'locations'));
     }
     public function singleStore($store_name){
         $store = Store::locatedAt($store_name);

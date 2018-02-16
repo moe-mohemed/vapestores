@@ -176,20 +176,6 @@
                 var loggedIn = false;
             </script>
         @endif
-            <script>
-                if (loggedIn != true){
-                    $('.panel-footer span a').on('click', function (event) {
-                        event.preventDefault();
-                        swal({
-                            title: "Sorry",
-                            text: "You must be signed in to add spas to your favourites",
-                            type: "warning",
-                            timer: 2000,
-                            showConfirmButton: false
-                        });
-                    });
-                }
-            </script>
         @yield('scripts.footer')
 
         @include('flash')

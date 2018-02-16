@@ -1,7 +1,7 @@
 <!-- sidebar nav -->
 <div class="sidebar" id="citiesId">
     <div class="logo">
-        <a href="/home"><img src="/img/logo.png"></a>
+        <a href="/home"><h3 style="text-align: center; color: #fff;">VapeStoreMaps</h3></a>
     </div>
     <div class="navage-sidebar">
         <ul>

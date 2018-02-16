@@ -176,7 +176,7 @@
                             @if($user && $user->manages($store) || $user && $user->isAdmin())
                                 <div class="manager-edit">
                                     {{--<a href="/manageredit/{{ $store->id }}">Edit Spa</a>--}}
-                                    <a href="/spa/{{ $store->id }}/manageredit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Edit Spa</span></a>
+                                    <a href="/store/{{ $store->id }}/manageredit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Edit Spa</span></a>
                                     @if(count($store->photos))
                                         <a href="/photos/{{ $store->photos[0]->store_id }}/pickimage"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Pick Main Image</span></a>
                                     @endif
