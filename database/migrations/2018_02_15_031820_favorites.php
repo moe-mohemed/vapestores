@@ -20,6 +20,7 @@ class Favorites extends Migration
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
